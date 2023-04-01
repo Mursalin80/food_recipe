@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
+import Ran_Recipes from '../components/Ran_Recipes';
+import Chicken from '@/components/Chicken';
+import Navigation from '@/components/Navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,33 +15,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container mx-auto">
-        <div className="flex justify-center bg-gray-200 mx-auto relative">
-          <div className="absolute top-0 left-0 bg-gray-100 m-1 flex rounded-xl w-30 h-7">
-            <Image
-              className="p-1  "
-              src="/next.svg"
-              alt="Next.js Logo"
-              width={80}
-              height={20}
-              priority
-            />
-            <Image
-              className="p-1"
-              src="/thirteen.svg"
-              alt="13"
-              width={25}
-              height={15}
-              priority
-            />
-          </div>
-          <h1 className=" text-9xl text-cyan-900 uppercase m-3 p-5">
-            Hello from Next.js
-          </h1>
-        </div>
-
-        <div className="">
-          <div className=""></div>
+      <main className="w-full bg-gray-100 h-full">
+        <div className="  relative container mx-auto ">
+          <Navigation />
+          <Ran_Recipes />
+          <Chicken />
         </div>
       </main>
     </>
