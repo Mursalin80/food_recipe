@@ -12,6 +12,18 @@ yarn dev
 pnpm dev
 ```
 
+### For API key
+
+- get api key from
+  [https://spoonacular.com/food-api](https://spoonacular.com/food-api)
+
+```
+# add the following file in root directory
+.env.local
+
+# add the api key in .env.local
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
