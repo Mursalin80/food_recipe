@@ -1,10 +1,7 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
 import Ran_Recipes from '../components/Ran_Recipes';
 import Chicken from '@/components/Chicken';
 import Navigation from '@/components/Navigation';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (

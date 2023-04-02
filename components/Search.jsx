@@ -4,10 +4,8 @@ import { FaSearch } from 'react-icons/fa';
 import Router from 'next/router';
 
 const Search = () => {
-  //   const router = useRouter();
   const [txtIn, setTxtIn] = useState('');
   const handleSubmit = (e) => {
-    // router.push(`./search/${txtIn}`);
     Router.push(`/search?dish=${txtIn}`);
   };
   return (

@@ -1,6 +1,4 @@
 import { useRouter } from 'next/router';
-import '@splidejs/react-splide/css';
-import { motion } from 'framer-motion';
 import Navigation from '@/components/Navigation';
 import useSWR from 'swr';
 import Loader from '@/components/Loader';

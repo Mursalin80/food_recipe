@@ -1,9 +1,9 @@
-import React from 'react';
 import useSWR from 'swr';
-
 import { useRouter } from 'next/router';
-import Spinner from '@/components/Spinner';
 import Navigation from '@/components/Navigation';
+import Card_dish from '@/components/Card_dish';
+
+import Spinner from '@/components/Spinner';
 
 const search = () => {
   const { query } = useRouter();
@@ -25,15 +25,18 @@ const search = () => {
         <Navigation />
         <div className=" container mx-auto my-3 p-5">
           <h1 className=" text-2xl text-cyan-700 uppercase m-2 p-2">
-            Vegitrian Recipes.
+            Total {dish + ': ' + data.recipes?.number}
           </h1>
 
           <div className="m-2 flex flex-row flex-wrap ">
-            {/* {data.recipes?.map((r, i) => (
-            <div className="max-w-2xl h-96 w-80 mx-4 hover:-translate-y-5 hover:opacity-80">
-              <Card_dish imgUrl={r.image} title={r.title} id={r.id} />
-            </div>
-          ))} */}
+            {data.recipes?.results.map((r, i) => (
+              <div
+                className="max-w-2xl h-96 w-80 mx-4 hover:-translate-y-5 hover:opacity-80"
+                key={i}
+              >
+                <Card_dish imgUrl={r.image} title={r.title} id={r.id} />
+              </div>
+            ))}
           </div>
         </div>
       </div>

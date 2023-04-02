@@ -17,11 +17,12 @@ pnpm dev
 - get api key from
   [https://spoonacular.com/food-api](https://spoonacular.com/food-api)
 
-```
-# add the following file in root directory
+```javascript
+// add the following file in root directory
 .env.local
 
-# add the api key in .env.local
+// add the api key in .env.local
+SPOONACULAR_API_KEY=yourApiKey
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

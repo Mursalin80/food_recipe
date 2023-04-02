@@ -1,4 +1,3 @@
-import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import useSWR from 'swr';
@@ -18,7 +17,6 @@ const Chicken = () => {
         <Spinner />
       </div>
     );
-  // console.log({ data });
 
   if (!data.recipes) {
     return <Card imgUrl="Not Found!" title="Not Found" id={0} />;

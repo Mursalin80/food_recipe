@@ -1,4 +1,3 @@
-import React from 'react';
 import Category from '@/components/Category';
 import Image from 'next/image';
 import Link from 'next/link';
