@@ -1,6 +1,7 @@
 import Category from '@/components/Category';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import Search from './Search';
 
 const Navigation = () => {
@@ -27,6 +28,7 @@ const Navigation = () => {
             />
           </Link>
         </div>
+
         <h1 className=" text-9xl text-cyan-900 uppercase m-3 p-5">
           Hello from Next.js
         </h1>
